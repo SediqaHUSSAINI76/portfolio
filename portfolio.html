@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- //the styling part -->
+    <style>
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color:#e18098 ;
+    box-shadow: 0 2px 4px;
+rgba(0,0,0,0.05);
+}
+.logo{
+    font-family: poppins;
+    font-weight: 12px;
+    font-weight: bold;
+    color: rgb(194, 154, 94);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+    color:white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color:black;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul li a:hover::after{
+    width: 100%;
+} 
+.portfolio-gride{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.my-cards{
+     background: #fff;
+     border-radius: 16px;
+     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+     overflow: hidden;
+     padding: 1rem;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     text-align: center;
+}
+.my-cards:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0,0, 0.1);
+}
+.my-cards img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.my-cards h3{
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: black;
+}
+.my-cards p{
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.my-cards a{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff8fa3;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.my-cards a:hover{
+    background-color: #ff4d6d;
+}
+footer{
+    height: 100px;
+    margin-top:200px;
+       background-color: #e18098;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeInfooter 1s ease-in;
+    border-top: 1px solid#ddd; 
+    font-size: 50px;
+}
+footer i{
+     color: white;
+    transition: color 0.3s ease;
+    margin: 0 0.5rem;
+}
+footer i:hover{
+    color: black;
+    transition:trancform 0.s ease;
+}
+h1{
+    text-align: center;
+}
+@media(max-width:768px){
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image{
+        width: 150px;
+        height: 150px;
+    }
+    .abou-text{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+    @media(max-width:768px){
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image{
+        width: 150px;
+        height: 150px;
+    }
+    .abou-text{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+}
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- // the HTML part -->
+<body>
+    <header>
+<div class="logo">
+            <img src="Final pics/Other.jpg" style="height: auto; width: 50px;">
+        </div>
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+        </ul>
+       </nav>
+    </header>
+    <h1>My projects</h1>
+   <section class="portfolio-gride">
+    <div class="my-cards">
+        <img src="Final pics/myhub.png"alt=" my first project" style="height: auto;width:200px;">
+        <h3>My personal info hub</h3>
+        <p>This my first project HTML and basic CSS that I have done but unfortunatly I could not put it github it is a information website
+            about me.
+        </p>
+        <a href="file:///C:/Users/Philips%20Computer/OneDrive/Desktop/html/My%20Personal%20Info%20Hub/index.html" target="_blank">Watch more</a>
+    </div>
+    <div class="my-cards">
+        <img src="Final pics/mytheater.png" alt=" another work" style="height: auto; width:200px;">
+        <h3>My theater</h3>
+        <p>My secound work which i did and shear it in gethub it is a theater which provide a ttralier of a Funch film.</p>
+        <a href="file:///C:/Users/Philips%20Computer/OneDrive/Desktop/html/my%20theater/index.html" target="_blank">view</a>
+    </div>
+    <div class="my-cards">
+        <img src="Final pics/my Afganistan.png" alt="another one" style="height: auto; width: 200px;">
+        <h3>Afghanistan</h3>
+        <p> I love this one more becouse it isabout our home and i tried to do it in a perfect way so I think so nice one with all pictuers from my beutiful country.</p>
+        <a href="file:///C:/Users/Philips%20Computer/OneDrive/Desktop/html/afghanistan%20project/index.html" target="_blank">Take a looke</a>
+    </div>
+   </section>
+   <footer>
+         <div class="footer">
+            <i class="fab fa-envelope"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </div>
+   </footer>
+</body>
+</html>

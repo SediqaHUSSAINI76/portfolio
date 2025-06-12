@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- //th styling part -->
+    <style>
+        header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color:#e18098 ;
+    box-shadow: 0 2px 4px;
+rgba(0,0,0,0.05);
+}
+.logo{
+    font-family: poppins;
+    font-weight: 12px;
+    font-weight: bold;
+    color: rgb(194, 154, 94);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+    color:white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color:black;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul li a:hover::after{
+    width: 100%;
+} 
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+}
+.about-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+.about-image:hover{
+    scale: (1.05);
+}
+.text-about{
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1;
+    animation: fedIn 1s ease forwards;
+}
+.skill-list{
+   list-style: none;
+   padding: 0;
+   margin-top: 1.5rem;
+}
+.skill-list li{
+    background: #ce98a6;
+    padding: 0.5rem 1rem; 
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+/* .about-back{
+    display: inline-block;
+    margin-top: 1rem;
+    background: #ce98a6;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.about-back:hover{
+    color: #e2b9c4;
+} */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer{
+    height: 100px;
+    background-color: #e18098;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    text-align: center;
+    animation: fadeInfooter 1s ease-in;
+    border-top: 1px solid#ddd; 
+    font-size: 50px;
+    margin: 0 10px;
+}
+footer i{
+    color: white;
+    transition: color 0.3s ease;
+    margin: 0 0.5rem;
+}
+footer a{
+     text-decoration: none;
+    color: white;
+}
+@keyframes fadeInfooter{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer i:hover{
+    color: black;
+}
+@media(max-width:768px){
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image{
+        width: 150px;
+        height: 150px;
+    }
+    .abou-text{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+}
+
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- // the HTML part -->
+<body>
+    <header>
+      <div class="logo">
+            <img src="Final pics/Other.jpg" style="height: auto; width: 50px;">
+        </div>
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+        </ul>
+       </nav>
+    </header>
+    <section class="about">
+      <div class="about-image">
+        <img  src="Final pics/photo 5.jpg" alt=" My pictuer which I amworking with my computer" style="width: 100%; height: 100%; border-radius: 50%;">
+      </div>
+      <div class="about-text">
+        <p>This is me Sediqa Hussaini a girl who was student at law faculty in Mazar-e-sharif in Afghanistan but after regim changed she had to 
+            find another way of learning o she started learnin languages after she realized she wants to learn new skill so she has gone in Codding.
+        </p>
+      </div>
+      <div>
+        <ul class="skill-list">
+            <li>languages</li>
+            <li>Computer-languge</li>
+            <li>Writeing</li>
+        </ul>
+      </div>
+      <!-- <div class="about-back" >
+           <a href="index.html"class="about-back">Back to Home</a>
+      </div> -->
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="mailto:sediqahussaini76@gmail.com" target="_blank"><i class="fab fa-envelope"></i>Email</a>
+            <a href="https//twitter.com/sediqa.hussaini" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
